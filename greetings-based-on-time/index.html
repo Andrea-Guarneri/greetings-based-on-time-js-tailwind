@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importing tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Style CSS -->
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <!-- Favicon standard -->
+  <link rel="icon" href="assets/js-logo.png" type="image/x-icon">
+
+  <title>Greetings of the day</title>
+</head>
+
+<body id="body"
+  class="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-600">
+
+  <!-- main div -->
+  <div id="output" class="text-black text-center p-6 rounded-lg shadow-xl bg-slate-200">
+
+    <!-- greetings of the day -->
+    <h2 id="greeting-text" class="text-3xl font-sans font-semibold"></h2>
+    
+    <!-- images of the day -->
+    <img id="time-img" alt="Imagem correspondente ao tempo do dia" class="mt-4 max-h-[650px] object-cover rounded">
+  </div>
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -10,6 +10,10 @@ I’m building a solid foundation in JavaScript by working on real-world solutio
 
 This project offers dynamic greetings based on the time of day. Users input the time of day ("day", "afternoon", or "night"), and the page responds by changing its background color, displaying a matching image, and showing a relevant greeting message—all powered by **JavaScript** and **Tailwind CSS**.
 
+### 🌐 Live Demo
+
+You can view this app live on Netlify: [Greetings Based on Time](https://greetings-based-on-time.netlify.app/)
+
 ### 🌟 Key Features
 
 - **User Prompt**: The page prompts users to specify the time of day (day, afternoon, night) via `prompt()`.

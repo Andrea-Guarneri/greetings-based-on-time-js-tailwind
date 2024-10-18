@@ -43,10 +43,16 @@ var afternoonImage = "assets/sunset.jpg";
 var nightImage = "assets/night-sky.jpg";
 var errorImage = "assets/error.webp";
 
+var bgDay = "bg-yellow-400";
+var bgAfternoon = "bg-orange-600";
+var bgNight = "bg-blue-950";
+var bgError = "bg-red-500";
+var bgTimeOfDay = " ";
+
 // If, else structure
 if (timeOfDay === "day") {
     // If it's "day", set the background to yellow and display the morning message
-    body.className = "bg-yellow-400 flex flex-col items-center justify-center h-screen";
+    bgTimeOfDay += bgDay;
     greetingText.textContent = "Have a great morning, enjoy the sun!";
     timeImg.setAttribute("src", morningImage); // Set the image directly
     timeImg.setAttribute("alt", "Sunny morning");
@@ -54,7 +60,7 @@ if (timeOfDay === "day") {
     // If it's not "day", check if it's "afternoon"
     if (timeOfDay === "afternoon") {
         // If it's "afternoon", set the background to orange and display the afternoon message
-        body.className = "bg-orange-600 flex flex-col items-center justify-center h-screen";
+        bgTimeOfDay += bgAfternoon;
         greetingText.textContent = "Have a great afternoon, enjoy the sunset!";
         timeImg.setAttribute("src", afternoonImage); // Set the image directly
         timeImg.setAttribute("alt", "Sunset");
@@ -62,16 +68,18 @@ if (timeOfDay === "day") {
         // If it's not "afternoon", check if it's "night"
         if (timeOfDay === "night") {
             // If it's "night", set the background to dark blue and display the night message
-            body.className = "bg-blue-950 flex flex-col items-center justify-center h-screen";
+            bgTimeOfDay += bgNight;
             greetingText.textContent = "Good night, enjoy the stars and the moon!";
             timeImg.setAttribute("src", nightImage); // Set the image directly
             timeImg.setAttribute("alt", "Night sky with moon");
         } else {
             // If it's none of the previous options, display an error
-            body.className = "bg-red-500 flex flex-col items-center justify-center h-screen";
+            bgTimeOfDay += bgError;
             greetingText.textContent = "Error! You entered something incorrectly.";
             timeImg.setAttribute("src", errorImage); // Set the image directly
             timeImg.setAttribute("alt", "Typing error");
         }
     }
 }
+
+body.className += bgTimeOfDay;

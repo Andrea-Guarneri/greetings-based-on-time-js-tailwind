@@ -23,20 +23,22 @@
   <title>Greetings of the day</title>
 </head>
 
-<body id="body"
-  class="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-600">
+<body id="body" class="flex h-screen bg-gray-200 sm:px-4 lg:px-0">
 
   <!-- Main container -->
-  <div id="output" class="text-black text-center p-6 rounded-lg shadow-xl bg-slate-200 max-w-4xl mx-4 sm:mx-auto">
+  <div id="output"
+    class="text-black text-center p-4 rounded-lg shadow-xl bg-slate-200 max-w-4xl mx-4 sm:mx-auto my-auto">
 
     <!-- Greeting text -->
     <h2 id="greeting-text" class="text-2xl font-sans font-semibold md:text-3xl lg:text-3xl">
       Greetings of the Day
     </h2>
 
-    <!-- Image corresponding to the time of the day -->
-    <img id="time-img" alt="Time of the day image"
-      class="mt-4 w-full max-h-80 sm:max-h-96 md:max-h-[500px] lg:max-h-[650px] object-cover rounded-lg">
+    <!-- img card -->
+    <div class="mt-4 md:max-h-[500px] min-h-[300px] overflow-hidden">
+      <!-- Image corresponding to the time of the day -->
+      <img id="time-img" alt="Time of the day image" class="min-h-[300px] h-full w-full object-cover rounded-lg">
+    </div>
 
   </div>
 
